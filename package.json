@@ -1,0 +1,21 @@
+{
+  "name": "clean-code-todo",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "eslint": "^9.15.0",
+    "prettier": "^3.3.3",
+    "husky": "^9.1.6",
+    "lint-staged": "^15.2.10",
+    "globals": "^15.11.0"
+  },
+  "lint-staged": {
+    "*.{js,html,css}": "prettier --check",
+    "*.js": "eslint"
+  }
+}
